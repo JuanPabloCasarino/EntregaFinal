@@ -1,0 +1,97 @@
+.fotos-tienda {
+    width: 400px;
+    height: 420px;
+    padding: 30px;
+
+}
+
+.filas-tienda {
+    margin-bottom: 150px;
+}
+
+h3 {
+    text-align: center;
+}
+
+.boton-tienda {
+    position: absolute;
+    top: 200px;
+    color: #f1f1f1;
+    width: 100%;
+}
+
+.containers {
+    position: relative;
+
+    .btn-primary {
+        background: rgba(255, 255, 255, 0.5);
+        border-color: map-get($map: $colores, $key: color-usos);
+        width: 50%;
+    }
+
+    .modal-content {
+        background-color: aliceblue;
+    }
+}
+
+.propaganda {
+    position: relative;
+    .foto-propa {
+        width: 1500px;
+        height: 1000px;
+    }
+
+    .content {
+        position: absolute;
+        bottom: 0;
+        background: rgb(0, 0, 0);
+        background: rgba(0, 0, 0, 0.5);
+        width: 1500px;
+        padding: 20px;
+
+        p {
+            color: #f1f1f1;
+            font-size: 30px;
+            font-family: roboto;
+        }
+    }
+}
+
+.tienda {
+    background: url(../assets/img/fondo-blanco.jpg) no-repeat center center fixed !important;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+h6 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+}
+
+h7 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    color: map-get($map: $colores, $key: color-usos);
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1200px) {
+    main {
+        div {
+            div {
+                padding: 10px;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .fotos-tienda {
+        width: 300px;
+        height: 320px;
+    }
+
+}

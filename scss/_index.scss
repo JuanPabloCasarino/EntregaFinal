@@ -1,0 +1,206 @@
+.medidas {
+    width: 350px;
+    height: 240px;
+}
+
+#subtitulo {
+    text-align: start;
+    font-size: 34px;
+    color: black;
+}
+
+#intro {
+    padding: 25px;
+
+    p {
+        font-size: 22px;
+    }
+}
+
+.btn {
+    background-color: aliceblue;
+    color: black;
+    width: 230px;
+
+}
+
+#info-copa {
+    margin-top: 40px;
+
+    .accordion-item {
+        background: linear-gradient(top, rgba(255, 255, 255, 0), rgb(19, 156, 197, 0.5)), url(../assets/img/fondo-blanco.jpg);
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    .accordion-button {
+        background: linear-gradient(top, rgba(255, 255, 255, 0), rgb(19, 156, 197, 0.5)), url(../assets/img/fondo-blanco.jpg);
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+}
+
+
+
+#copa {
+    border: 4px solid map-get($map: $colores, $key: color-fondo);
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.carrousel {
+    width: 1700px;
+    height: 750px;
+}
+
+.fade {
+    opacity: 0.8;
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 1s;
+}
+
+.fade:hover {
+    opacity: 1;
+}
+
+#cartel-medio {
+    background: url(../assets/img/blanco-horizontal.jpg) no-repeat center center fixed !important;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 10px;
+    margin-top: 40px;
+
+    div {
+        p {
+            font-family: helvetica;
+            font-size: 22px;
+        }
+    }
+}
+
+#estadisticas {
+    background: linear-gradient(top, rgba(255, 255, 255, 0), rgb(19, 156, 197, 0.8)), url(../assets/img/blanco-horizontal.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin-top: 20px;
+
+    h3 {
+        margin-top: 20px;
+        color: map-get($map: $colores, $key: color-usos)
+    }
+}
+
+#goleadores {
+    border: solid 1px black;
+    border-radius: 30px;
+    margin-bottom: 20px;
+}
+
+.filas-info {
+    font-size: 60px;
+    font-family: helvetica;
+}
+
+.resultados-finales {
+    padding: 5px
+}
+
+.jugadores {
+    margin-top: 10px
+}
+
+.numeros-info {
+    @extend .filas-info;
+    font-size: 40px;
+}
+
+
+@media screen and (max-width: 1590px) {
+    .medidas {
+        width: 250px;
+        height: 200px;
+    }
+
+    .carrousel {
+        width: 1400px;
+        height: 650px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .medidas {
+        width: 200px;
+        height: 150px;
+    }
+
+    .carrousel {
+        width: 1200px;
+        height: 550px;
+    }
+
+    #info-copa {
+        margin-top: 0px;
+        padding: 0px;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .medidas {
+        width: 300px;
+        height: 220px;
+    }
+
+    .carrousel {
+        width: 1000px;
+        height: 480px;
+    }
+
+    #intro {
+        p {
+            font-size: 18px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #copa {
+        height: 250px;
+    }
+
+    #subtitulo {
+        font-size: 20px;
+    }
+
+    .carrousel {
+        width: 750px;
+        height: 350px;
+    }
+
+
+}
+
+@media screen and (max-width: 480px) {
+    #copa {
+        height: 200px;
+    }
+
+    h1 {
+        font-size: 30px;
+
+
+    }
+
+    .carrousel {
+        width: 500px;
+        height: 280px;
+    }
+
+}
