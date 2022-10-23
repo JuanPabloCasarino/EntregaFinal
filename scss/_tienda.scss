@@ -37,8 +37,8 @@ h3 {
 .propaganda {
     position: relative;
     .foto-propa {
-        width: 1500px;
-        height: 1000px;
+        width: 1400px;
+        height: 950px;
     }
 
     .content {
@@ -46,8 +46,8 @@ h3 {
         bottom: 0;
         background: rgb(0, 0, 0);
         background: rgba(0, 0, 0, 0.5);
-        width: 1500px;
-        padding: 20px;
+        width: 1400px;
+    
 
         p {
             color: #f1f1f1;
@@ -77,15 +77,66 @@ h7 {
     font-weight: bold;
 }
 
+
+@media screen and (max-width: 1550px) {
+    
+    
+    .propaganda{
+        .foto-propa {
+            width: 1200px;
+            height: 700px;
+        }
+        .content{
+            width:1200px;
+        }
+    }
+}
+
 @media screen and (max-width: 1200px) {
-    main {
-        div {
-            div {
-                padding: 10px;
+    
+    .propaganda{
+        .foto-propa {
+            width: 1000px;
+            height: 650px;
+        }
+        .content{
+            width:1000px;
+        }
+    }
+}
+@media screen and (max-width: 1080px) {
+    
+    .propaganda{
+        .foto-propa {
+            width: 800px;
+            height: 500px;
+        }
+        .content{
+            width:800px;
+            p {
+                color: #f1f1f1;
+                font-size: 25px;
+                font-family: roboto;
+            }
+        }    
+    }
+}
+@media screen and (max-width: 860px) {
+    
+    .propaganda{
+        .foto-propa {
+            width: 600px;
+            height: 370px;
+        }
+        .content{
+            width:600px;
+            p {
+                color: #f1f1f1;
+                font-size: 20px;
+                font-family: roboto;
             }
         }
     }
-
 }
 
 @media screen and (max-width: 768px) {
@@ -94,4 +145,16 @@ h7 {
         height: 320px;
     }
 
+}
+@media screen and (max-width: 630px) {
+    
+    .propaganda{
+        .foto-propa {
+            width: 400px;
+            height: 250px;
+        }
+        .content{
+            width:400px;
+        }
+    }
 }
